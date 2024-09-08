@@ -1,0 +1,41 @@
+{
+  "name": "webpack-template",
+  "version": "1.0.0",
+  "description": "Basic css-only webpack template",
+  "type": "module",
+  "scripts": {
+    "build": "webpack -c webpack/prod.js",
+    "start": "webpack serve --open -c webpack/dev.js",
+    "deploy": "gh-pages -d dist -m \"Deploy at $(date '+%F %T')\"",
+    "lint": "stylelint -c .config/stylelint.config.js --mw 0 .",
+    "lint:fix": "stylelint -c .config/styleling.config.js --fix ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@awmottaz/prettier-plugin-void-html": "^1.6.1",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.0",
+    "gh-pages": "^6.1.1",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.1",
+    "prettier": "^3.3.3",
+    "style-loader": "^4.0.0",
+    "stylelint": "^16.9.0",
+    "stylelint-config-concentric-order": "^5.2.0",
+    "stylelint-config-standard": "^36.0.1",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0",
+    "webpack-merge": "^6.0.1",
+    "webpack-remove-empty-scripts": "^1.0.4"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "plugins": [
+      "@awmottaz/prettier-plugin-void-html"
+    ]
+  }
+}
