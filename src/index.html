@@ -13,22 +13,32 @@
   </head>
 
   <body class="root__page page">
-    <header class="header container">
+    <div class="slant-deco">
+      <div class="slant-deco__inner"></div>
+    </div>
+    <header class="header">
       <figure class="header__figure">
-        <img
-          class="header__img img"
-          src="img/head-ashley-narrow.webp"
-          alt="Ashley Williams"
-        >
+        <picture class="header__picture">
+          <source media="(width >= 700px)" srcset="img/head-ashley-wide.webp">
+
+          <img
+            class="header__img img"
+            src="img/head-ashley-narrow.webp"
+            alt="Ashley Williams"
+          >
+        </picture>
         <figcaption class="header__figcaption">Ashley Williams</figcaption>
       </figure>
-      <div class="header__text">
+      <div class="header__text page__container">
         <h1 class="header__title">About me</h1>
         <p class="header__body">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga pariatur
-          corrupti velit qui ullam eveniet vel cum? Perspiciatis inventore optio
-          consequuntur harum. Tempora ratione provident repudiandae iste
-          exercitationem fugit odit?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsum
+          natus facere laudantium repudiandae libero ab eos, quasi doloremque
+          porro vel ullam debitis dolor ipsa, cum itaque voluptate dolores esse?
+          Voluptatem impedit nisi facilis? Labore possimus neque natus, dolorum
+          velit minus suscipit iste nihil reprehenderit. Eveniet dolore officia
+          ducimus excepturi culpa dolorem sequi itaque consequuntur dolorum,
+          aperiam qui! Itaque, ipsam!
         </p>
       </div>
       <div class="header__socials socials">
@@ -42,7 +52,7 @@
       </div>
     </header>
 
-    <main class="main container">
+    <main class="main page__container">
       <h2 class="main__title">My work</h2>
       <div class="main__cards-container">
         <div class="main__card card">
@@ -200,7 +210,7 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__content container">
+      <div class="footer__content page__container">
         <h3 class="footer__title">Contact me</h3>
         <p class="footer__text">
           Please get in touch if you think our work could be mutually
