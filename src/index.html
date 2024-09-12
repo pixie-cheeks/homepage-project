@@ -16,11 +16,11 @@
     <div class="slant-deco">
       <div class="slant-deco__inner"></div>
     </div>
-    <header class="header">
+
+    <header class="header page__container">
       <figure class="header__figure">
         <picture class="header__picture">
           <source media="(width >= 700px)" srcset="img/head-ashley-wide.webp">
-
           <img
             class="header__img img"
             src="img/head-ashley-narrow.webp"
@@ -29,7 +29,7 @@
         </picture>
         <figcaption class="header__figcaption">Ashley Williams</figcaption>
       </figure>
-      <div class="header__text page__container">
+      <div class="header__text">
         <h1 class="header__title">About me</h1>
         <p class="header__body">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsum
@@ -40,15 +40,20 @@
           ducimus excepturi culpa dolorem sequi itaque consequuntur dolorum,
           aperiam qui! Itaque, ipsam!
         </p>
-      </div>
-      <div class="header__socials socials">
-        <img src="img/github.svg" alt="GitHub's icon" class="header__icon img">
-        <img
-          src="img/linkedin.svg"
-          alt="LinkedIn's icon"
-          class="header__icon img"
-        >
-        <img src="img/x.svg" alt="X's icon" class="header__icon img">
+
+        <div class="header__socials socials">
+          <img
+            src="img/github.svg"
+            alt="GitHub's icon"
+            class="header__icon img"
+          >
+          <img
+            src="img/linkedin.svg"
+            alt="LinkedIn's icon"
+            class="header__icon img"
+          >
+          <img src="img/x.svg" alt="X's icon" class="header__icon img">
+        </div>
       </div>
     </header>
 
@@ -210,58 +215,63 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__content page__container">
-        <h3 class="footer__title">Contact me</h3>
-        <p class="footer__text">
-          Please get in touch if you think our work could be mutually
-          beneficial!
-        </p>
+      <div class="page__container footer__container">
+        <div class="footer__content">
+          <h3 class="footer__title">Contact me</h3>
+          <p class="footer__text">
+            Please get in touch if you think our work could be mutually
+            beneficial!
+          </p>
 
-        <p class="footer__info">
-          1234 Random Road<br>
-          Random Town, California 12345
-        </p>
+          <p class="footer__info">
+            1234 Random Road<br>
+            Random Town, California 12345
+          </p>
 
-        <div class="footer__contact contact">
-          <div class="contact__row">
-            <img
-              src="img/phone-outline.svg"
-              alt="Phone icon"
-              class="img contact__icon"
-            >
-            <div class="contact__text">555-555-5555</div>
-          </div>
-          <div class="contact__row">
-            <img
-              src="img/email-outline.svg"
-              alt="Email icon"
-              class="img contact__icon"
-            >
-            <div class="contact__text">
-              ashleywilliams.is.not.real@gmail.com
+          <div class="footer__contact contact">
+            <div class="contact__row">
+              <img
+                src="img/phone-outline.svg"
+                alt="Phone icon"
+                class="img contact__icon"
+              >
+              <div class="contact__text">555-555-5555</div>
+            </div>
+            <div class="contact__row">
+              <img
+                src="img/email-outline.svg"
+                alt="Email icon"
+                class="img contact__icon"
+              >
+              <div class="contact__text">
+                ashleywilliams.is.not.real@gmail.com
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="footer__socials socials">
-          <img
-            src="img/github.svg"
-            alt="GitHub's icon"
-            class="footer__icon img"
-          >
-          <img
-            src="img/linkedin.svg"
-            alt="LinkedIn's icon"
-            class="footer__icon img"
-          >
-          <img src="img/x.svg" alt="X's icon" class="footer__icon img">
+          <div class="footer__socials socials">
+            <img
+              src="img/github.svg"
+              alt="GitHub's icon"
+              class="footer__icon img"
+            >
+            <img
+              src="img/linkedin.svg"
+              alt="LinkedIn's icon"
+              class="footer__icon img"
+            >
+            <img src="img/x.svg" alt="X's icon" class="footer__icon img">
+          </div>
         </div>
+        <picture class="footer__picture">
+          <source media="(width >= 1100px)" srcset="img/foot-ashley-wide.webp">
+          <img
+            src="img/foot-ashley-narrow.webp"
+            alt="Ashley working"
+            class="footer__img img"
+          >
+        </picture>
       </div>
-      <img
-        src="img/foot-ashley-narrow.webp"
-        alt="Ashley working"
-        class="footer__img img"
-      >
     </footer>
   </body>
 </html>
